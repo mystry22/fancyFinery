@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <div class="grid-container"> 
+        <header class="header">
+            <div class="brand">
+                <button onclick="openSide()">
+                    &#9776;
+                </button>
+                <a href="#">FancyFinery</a>
+            </div>    
+                <div class="header-links">
+                    <a href="#">Sign In</a>
+                    <a href="#">Cart</a>
+                </div>
+        
+        </header>
+        <aside class="sidebar">
+            <h3>Menu</h3>
+            <button class="sidebar-close-button" onclick="closeSide()">x</button>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+            
+            
+        </aside>
+        <main class="main">
+            <div class="contents">
+                <ul class="products">
+                    <li class="product">
+                        <img class="product-image" src="./image/img.png" alt="Product">
+                        <div class="product-name"><a href="#">Boot Call</a></div>
+                        <div class="product-description">Best Shoe in the world</div>
+                        <div class="product-price">#6000</div>
+
+                    </li>
+                    
+
+                
+                <li class="product">
+                    <img class="product-image" src="./image/img.png" alt="Product">
+                    <div class="product-name"><a href="#">Boot Call</a></div>
+                    <div class="product-description">Best Shoe in the world</div>
+                    <div class="product-price">#6000</div>
+
+                </li>
+                <li class="product">
+                    <img class="product-image" src="./image/img.png" alt="Product">
+                    <div class="product-name"><a href="#">Boot Call</a></div>
+                    <div class="product-description">Best Shoe in the world</div>
+                    <div class="product-price">#6000</div>
+
+                </li>
+                <li class="product">
+                    <img class="product-image" src="./image/img.png" alt="Product">
+                    <div class="product-name"><a href="#">Boot Call</a></div>
+                    <div class="product-description">Best Shoe in the world</div>
+                    <div class="product-price">#6000</div>
+
+                </li>
+            </ul>
+            </div>
+            
+        </main>
+
+        <footer class="footer">
+            <h4>All right reserved</h4>
+        </footer>
+      </div>
+      <script>
+          function openSide(){
+              document.querySelector(".sidebar").classList.add("open");
+          }
+          function closeSide(){
+              document.querySelector(".sidebar").classList.remove("open");
+          }
+      </script>
+    </body>
+</html>
